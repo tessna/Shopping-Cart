@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Zilla+Slab:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #d4cfb4;
+}
+
+header {
+  /* border: 1px solid black; */
+  display: flex;
+  border-bottom: 2px solid gray;
+  position: sticky;
+  box-shadow: 0 0 10px 0 rgb(197, 155, 155);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.titre {
+  /*border: 1px solid black;*/
+  width: 100%;
+  text-align: center;
+}
+.titre h1 {
+  font-size: 3rem;
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 7px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid black; */
+}
+
+/******************MAIN******************/
+
+.panier {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.produits {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  background-color: #c1b3a0;
+  max-height: 100rem;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #a8a389;
+}
+
+.produit {
+  display: flex;
+  margin: 20px;
+  background-color: #d4cfb4;
+  width: auto;
+  box-shadow: 7px 7px 7px#AFAC99;
+}
+
+.produit .imgproduit {
+  margin: 8px;
+}
+
+.produit .imgproduit img {
+  height: 150px;
+  width: 150px;
+}
+
+.infoproduit {
+  display: flex;
+  flex-direction: column;
+}
+.infoproduit .description {
+  font-size: 1rem;
+  padding: 20px 30px;
+  width: 150px;
+}
+
+.infoproduit .prixU {
+  padding: 0 30px;
+  color: darkslategray;
+}
+.quantite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantite button {
+  border: 1px solid rgb(165, 158, 158);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.quantite input {
+  margin: 10px;
+  appearance: none;
+  border: 1px solid rgb(165, 158, 158);
+  outline: none;
+  background: #c1b3a0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.prixT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 50px;
+}
+.prixT input {
+  appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+  height: 40px;
+}
+
+.favoris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  width: 50px;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  width: 50px;
+}
+
+.recap {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 20px;
+  background-color: #c1b3a0;
+  max-height: 300px;
+  box-shadow: 5px 5px 5px #a8a389;
+}
+
+.nbrproduit {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.prixproduits {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.prixlivraison {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.prixtotal {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 50px 20px;
+}
+
+.valider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.valider button {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: #199f36;
+  border: none;
+  box-shadow: 5px 5px 5px #00915c;
+  cursor: pointer;
+}
+
+.btn-valider:hover {
+  opacity: 0.8;
+}
+
+.btn-valide:active {
+  opacity: 0.6;
+}
+
+.favoris i {
+  font-size: 2.5rem;
+}
+
+.delete i {
+  font-size: 2.5rem;
+  color: rgb(69, 69, 124);
+}
+
+.fav,
+.del {
+  appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.fav:hover {
+  opacity: 0.8;
+}
+
+.fav:active {
+  opacity: 0.6;
+}
+
+.del:hover {
+  opacity: 0.5;
+}
